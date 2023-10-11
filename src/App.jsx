@@ -1,5 +1,5 @@
 import './App.css'
-import PokemonCard from './components/PokemonCard';vsf
+import PokemonCard from './components/PokemonCard';
 
 function App() {
   return (
