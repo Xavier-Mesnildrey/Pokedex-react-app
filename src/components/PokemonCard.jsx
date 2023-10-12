@@ -7,16 +7,22 @@ const pokemonList = [
     {name: "mew" },
   ];
 
-const pokemon = pokemonList[0];
+const pokemon = pokemonList[1];
 
 function PokemonCard() {
     
     return (
     <figure>
     {pokemon.imgSrc ? (
-        <img src={pokemon.imgSrc} alt={pokemon.name} />
+        <div>
+          <img src={pokemon.imgSrc} alt={pokemon.name} />
+        <figcaption>{pokemon.name}</figcaption>
+        </div>
       ) : (
-        <figcaption>Bulbasaur</figcaption>
+        <div>
+          <p>???</p>
+          <figcaption>{pokemon.name}</figcaption>
+        </div>
       )}
     </figure>
     );
